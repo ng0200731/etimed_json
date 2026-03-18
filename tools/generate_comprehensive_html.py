@@ -139,6 +139,11 @@ def generate_comprehensive_html(json_file, output_file):
             border: 2px solid #000000;
             margin-bottom: 40px;
             background: #ffffff;
+            page-break-before: always;
+        }}
+
+        .label-group:first-of-type {{
+            page-break-before: auto;
         }}
 
         .label-header {{
@@ -342,6 +347,102 @@ def generate_comprehensive_html(json_file, output_file):
             color: #8b0000;
             font-weight: 700;
         }}
+
+        .price-tag-container {{
+            position: sticky;
+            top: 20px;
+            margin: 0;
+            text-align: center;
+            height: fit-content;
+        }}
+
+        .price-tag-container img {{
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #000000;
+        }}
+
+        .split-layout {{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: start;
+        }}
+
+        .field-table-container {{
+            max-height: 800px;
+            overflow-y: auto;
+            border: 2px solid #000000;
+            background: #ffffff;
+        }}
+
+        .field-table-container::-webkit-scrollbar {{
+            width: 12px;
+        }}
+
+        .field-table-container::-webkit-scrollbar-track {{
+            background: #f1f1f1;
+        }}
+
+        .field-table-container::-webkit-scrollbar-thumb {{
+            background: #888;
+            border-radius: 6px;
+        }}
+
+        .field-table-container::-webkit-scrollbar-thumb:hover {{
+            background: #555;
+        }}
+
+        .field-mapping-row {{
+            transition: background-color 0.2s;
+            cursor: pointer;
+        }}
+
+        .field-mapping-row:hover {{
+            background-color: #e8f4f8 !important;
+        }}
+
+        .field-mapping-row.selected {{
+            background-color: #fffacd !important;
+            border-left: 4px solid #ff0000;
+        }}
+
+        .circle-highlight {{
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            border: 4px solid #ff0000;
+            border-radius: 50%;
+            background: rgba(255, 0, 0, 0.3);
+            cursor: move;
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 10;
+            transform: translate(-50%, -50%);
+        }}
+
+        .circle-highlight.active {{
+            opacity: 1;
+        }}
+
+        .circle-highlight.dragging {{
+            cursor: grabbing;
+            opacity: 0.8;
+        }}
+
+        .instruction-banner {{
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 12px 20px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #856404;
+        }}
+
+        .instruction-banner strong {{
+            color: #000000;
+        }}
     </style>
 </head>
 <body>
@@ -498,8 +599,8 @@ def generate_comprehensive_html(json_file, output_file):
                 </div>
 """
 
-        # Composition data
-        if label_id in ['GI000PRO', 'GI001BAW']:
+        # Composition data (only for GI000PRO - Composition Label Template)
+        if label_id == 'GI000PRO':
             composition = style_color.get('Composition', [])
             html += f"""
                 <div class="section">
@@ -539,8 +640,8 @@ def generate_comprehensive_html(json_file, output_file):
                 </div>
 """
 
-        # Care instructions
-        if label_id in ['GI000PRO', 'GI001BAW']:
+        # Care instructions (only for GI000PRO - Composition Label Template)
+        if label_id == 'GI000PRO':
             care = style_color.get('CareInstructions', [])
             html += f"""
                 <div class="section">
@@ -646,6 +747,234 @@ def generate_comprehensive_html(json_file, output_file):
             html += """
                         </tbody>
                     </table>
+                </div>
+"""
+
+        # Price tag field mapping (27 fields)
+        if label_id in ['PVP002XG', 'PVPV0102']:
+            # Get first item for example data
+            first_item = item_data[0] if item_data else {}
+
+            html += """
+                <div class="section">
+                    <div class="section-title">PRICE TAG FIELD MAPPING (27 Fields)</div>
+
+                    <div class="instruction-banner">
+                        <strong>Instructions:</strong>
+                        1. Double-click any row in the table to activate it (row will turn yellow)
+                        2. Click on the price tag image where you want to place the red circle
+                        3. Drag the red circle to fine-tune its position
+                        4. Release to save the position
+                        5. Repeat for all 27 fields
+                    </div>
+
+                    <div class="split-layout">
+                        <div class="price-tag-container" id="priceTagContainer">
+                            <img src="PVPV0102-PVP002XG_highlight.png" alt="Price Tag with Field Numbers" id="priceTagImage">
+                        </div>
+
+                        <div class="field-table-container">
+                            <table class="data-table" id="fieldMappingTable" style="margin: 0;">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 60px;">Circle #</th>
+                                        <th>Field Description</th>
+                                        <th>JSON Source</th>
+                                        <th>Example Value</th>
+                                        <th style="width: 100px;">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+"""
+
+            # Define all 27 fields with their JSON mappings
+            field_mappings = [
+                (2, 'Code of supplier', 'Supplier.SupplierCode', order.get('Supplier', {}).get('SupplierCode', 'N/A'), 'MISSING'),
+                (3, 'Code of order', 'LabelOrder.Id', order_info.get('Id', 'N/A'), 'OK'),
+                (4, 'FAM CODE', 'StyleColor.FAMILYID', style_color.get('FAMILYID', 'N/A'), 'OK'),
+                (5, 'FAM LINE DESCRIPTION', 'StyleColor.FAMILY', style_color.get('FAMILY', 'N/A'), 'OK'),
+                (7, 'Reference number', 'StyleColor.ReferenceID', style_color.get('ReferenceID', 'N/A'), 'OK'),
+                (8, 'Reference number', 'StyleColor.StyleID', style_color.get('StyleID', 'N/A'), 'OK'),
+                (9, 'The colour of the garment', 'StyleColor.Color', style_color.get('Color', 'N/A'), 'OK'),
+                (10, 'BLOCK of the garment', 'N/A', 'N/A', 'MISSING'),
+                (11, 'Distribution mark', 'N/A', 'N/A', 'MISSING'),
+                (12, 'BAR CODE EAN-13', 'ItemData.EAN13', first_item.get('EAN13', 'N/A'), 'OK'),
+                (13, 'Text: EUR (Europe)', 'FIXED', 'EUR', 'FIXED'),
+                (14, 'Text: IT (Italy)', 'FIXED', 'IT', 'FIXED'),
+                (15, 'Text: UK (United Kingdom)', 'FIXED', 'UK', 'FIXED'),
+                (16, 'Text: USA (U.S.A.)', 'FIXED', 'USA', 'FIXED'),
+                (17, 'Text: MEX (Mexico)', 'FIXED', 'MEX', 'FIXED'),
+                (18, 'Text: CN (China)', 'FIXED', 'CN', 'OK'),
+                (19, 'Size: EUR', 'ItemData.SizeName', first_item.get('SizeName', 'N/A'), 'OK'),
+                (20, 'Size: IT', 'ItemData.SizeNameIT', first_item.get('SizeNameIT', 'N/A'), 'OK'),
+                (21, 'Size: UK', 'ItemData.SizeNameUK', first_item.get('SizeNameUK', 'N/A'), 'OK'),
+                (22, 'Size: USA', 'ItemData.SizeNameUS', first_item.get('SizeNameUS', 'N/A'), 'OK'),
+                (23, 'Size: MEX', 'ItemData.SizeNameMX', first_item.get('SizeNameMX', 'N/A'), 'OK'),
+                (24, 'Size: CN', 'ItemData.SizeNameCN', first_item.get('SizeNameCN', 'N/A'), 'OK'),
+                (25, 'Family+Generic+code design text (Spanish)', 'Constructable', f"{style_color.get('FAMILY', '')} {style_color.get('Generic', '')} {style_color.get('ProductTypeES', '')}", 'CONSTRUCT'),
+                (29, 'Special Size on LEFT SIDE', 'N/A', 'N/A', 'MISSING'),
+                (30, 'Size Range', 'Constructable', 'XXS/XS/S/M/L/XL/XXL/1XL/2XL/3XL/4XL', 'CONSTRUCT'),
+                (31, 'Special Size on RIGHT SIDE', 'N/A', 'N/A', 'MISSING'),
+                (38, 'URL FOR QR CODE VALUE', 'N/A', 'N/A', 'MISSING'),
+            ]
+
+            for circle_num, description, json_source, value, status in field_mappings:
+                status_color = '#006400' if status == 'OK' else ('#d4a017' if status == 'CONSTRUCT' else ('#666666' if status == 'FIXED' else '#8b0000'))
+                status_text = '✓ Available' if status == 'OK' else ('⚙ Constructable' if status == 'CONSTRUCT' else ('◆ Fixed' if status == 'FIXED' else '✗ Missing'))
+
+                html += f"""
+                            <tr class="field-mapping-row" data-circle="{circle_num}" ondblclick="activateCircle({circle_num}, this)">
+                                <td style="text-align: center;"><strong>{circle_num}</strong></td>
+                                <td>{description}</td>
+                                <td style="font-family: monospace; font-size: 11px;">{json_source}</td>
+                                <td style="font-size: 12px;">{str(value)[:40]}</td>
+                                <td style="color: {status_color}; font-weight: 600; font-size: 12px;">{status_text}</td>
+                            </tr>
+"""
+
+            html += """
+                        </tbody>
+                    </table>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 15px; padding: 10px; background: #f0f0f0; border-left: 4px solid #000000;">
+                        <strong>Field Coverage Summary:</strong><br>
+                        ✓ Available: 22 fields (from JSON)<br>
+                        ⚙ Constructable: 2 fields (can be built from existing data)<br>
+                        ◆ Fixed: 5 fields (static text)<br>
+                        ✗ Missing: 5 fields (not in JSON)<br>
+                        <strong>Total: 27 fields mapped</strong>
+                    </div>
+
+                    <script>
+                        // Circle positions storage (initially empty)
+                        const circlePositions = {};
+
+                        let highlightDiv = null;
+                        let currentCircleNum = null;
+                        let isDragging = false;
+                        let isPlacing = false;
+                        let selectedRow = null;
+
+                        function activateCircle(circleNum, rowElement) {
+                            const container = document.getElementById('priceTagContainer');
+                            const img = document.getElementById('priceTagImage');
+                            if (!container || !img) return;
+
+                            // Remove previous selection
+                            if (selectedRow) {
+                                selectedRow.classList.remove('selected');
+                            }
+                            selectedRow = rowElement;
+                            rowElement.classList.add('selected');
+
+                            // Remove existing highlight
+                            if (highlightDiv) {
+                                highlightDiv.remove();
+                                highlightDiv = null;
+                            }
+
+                            currentCircleNum = circleNum;
+                            isPlacing = true;
+
+                            // Change cursor to indicate placement mode
+                            container.style.cursor = 'crosshair';
+
+                            // Add click listener to place circle
+                            container.addEventListener('click', placeCircle, {once: true});
+                        }
+
+                        function placeCircle(e) {
+                            const container = document.getElementById('priceTagContainer');
+                            const rect = container.getBoundingClientRect();
+
+                            // Calculate position relative to container
+                            let x = ((e.clientX - rect.left) / rect.width) * 100;
+                            let y = ((e.clientY - rect.top) / rect.height) * 100;
+
+                            // Constrain to container bounds
+                            x = Math.max(2, Math.min(98, x));
+                            y = Math.max(2, Math.min(98, y));
+
+                            // Create highlight circle
+                            highlightDiv = document.createElement('div');
+                            highlightDiv.className = 'circle-highlight active';
+                            highlightDiv.style.left = x + '%';
+                            highlightDiv.style.top = y + '%';
+                            highlightDiv.style.position = 'absolute';
+
+                            // Add drag functionality
+                            highlightDiv.addEventListener('mousedown', startDrag);
+
+                            container.style.position = 'relative';
+                            container.style.cursor = 'default';
+                            container.appendChild(highlightDiv);
+
+                            isPlacing = false;
+
+                            // Save position
+                            circlePositions[currentCircleNum] = {
+                                left: x + '%',
+                                top: y + '%'
+                            };
+                            console.log('Circle ' + currentCircleNum + ' placed at:', circlePositions[currentCircleNum]);
+                        }
+
+                        function startDrag(e) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            isDragging = true;
+                            highlightDiv.classList.add('dragging');
+
+                            document.addEventListener('mousemove', drag);
+                            document.addEventListener('mouseup', stopDrag);
+                        }
+
+                        function drag(e) {
+                            if (!isDragging || !highlightDiv) return;
+
+                            const container = document.getElementById('priceTagContainer');
+                            const rect = container.getBoundingClientRect();
+
+                            // Calculate position relative to container
+                            let x = ((e.clientX - rect.left) / rect.width) * 100;
+                            let y = ((e.clientY - rect.top) / rect.height) * 100;
+
+                            // Constrain to container bounds
+                            x = Math.max(2, Math.min(98, x));
+                            y = Math.max(2, Math.min(98, y));
+
+                            highlightDiv.style.left = x + '%';
+                            highlightDiv.style.top = y + '%';
+                        }
+
+                        function stopDrag(e) {
+                            if (!isDragging) return;
+
+                            isDragging = false;
+                            highlightDiv.classList.remove('dragging');
+
+                            // Save the new position
+                            if (currentCircleNum && highlightDiv) {
+                                circlePositions[currentCircleNum] = {
+                                    left: highlightDiv.style.left,
+                                    top: highlightDiv.style.top
+                                };
+                                console.log('Circle ' + currentCircleNum + ' position updated:', circlePositions[currentCircleNum]);
+                            }
+
+                            document.removeEventListener('mousemove', drag);
+                            document.removeEventListener('mouseup', stopDrag);
+                        }
+
+                        // Log final positions for copying
+                        window.getCirclePositions = function() {
+                            console.log('Current circle positions:');
+                            console.log(JSON.stringify(circlePositions, null, 2));
+                            return circlePositions;
+                        };
+                    </script>
                 </div>
 """
 
