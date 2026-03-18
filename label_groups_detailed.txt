@@ -1,0 +1,2382 @@
+========================================================================================================================
+DETAILED LABEL GROUPS WITH ALL RELATED DATA
+========================================================================================================================
+
+[1] JSON: LabelID = 'ADHEDIST'
+Vendor: 1052603 | Variable: 1
+→ PDF File: ADHEDIST-mango.pdf
+→ Purpose: Brand Logo
+
+------------------------------------------------------------------------------------------------------------------------
+
+FULL ORIGINAL JSON DATA FOR THIS LABEL:
+{
+  "Vendor": "1052603",
+  "LabelID": "ADHEDIST",
+  "Variable": "1"
+}
+
+RELATED DATA SETS UNDER THIS GROUP:
+
+  [C] SIZE/ITEM DATA (6 size variants):
+      Size Variant 1: 32
+      {
+        "itemQty": "12",
+        "EAN13": "8447692183895",
+        "Material": "26206040MP00232",
+        "COLOR": "WHITE",
+        "Phase_IN": "05.26",
+        "MangoColorCode": "01",
+        "MangoSizeCode": "32",
+        "MangoSAPSizeCode": "32",
+        "SizeName": "32",
+        "SizeNameES": "32",
+        "SizeNameFR": "32",
+        "SizeNameDE": "32",
+        "SizeNameIT": "36",
+        "SizeNameUK": "4",
+        "SizeNameUS": "0",
+        "SizeNameMX": "0",
+        "SizeNameCN": "155/58A",
+        "FillingWeight": "",
+        "stocksegment": "MA 0MNGUSA",
+        "PVP_ES": "39,99",
+        "CURRENCY_ES": "EUR",
+        "PVP_EU": "49,99",
+        "CURRENCY_EU": "EUR",
+        "PVP_IN": "5,490.00",
+        "CURRENCY_IN": "INR",
+        "GarmentMeasurements": [
+                {
+                        "Dim": "C",
+                        "Description": "Waist",
+                        "Measurement": "34.5"
+                },
+                {
+                        "Dim": "L19",
+                        "Description": "Side length",
+                        "Measurement": "108.4"
+                }
+        ],
+        "SizePack": {
+                "SizePackType": "PACK",
+                "SizePackQty": "1",
+                "TotalSizePackQty": "12",
+                "SizeBarCode": "8447692183895"
+        },
+        "SizeDescriptions": [
+                {
+                        "Id": "001",
+                        "DescriptionId": "SPAIN",
+                        "Country": "ES",
+                        "SizeDescription": "32"
+                },
+                {
+                        "Id": "002",
+                        "DescriptionId": "GERMANY",
+                        "Country": "GE",
+                        "SizeDescription": "32"
+                },
+                {
+                        "Id": "003",
+                        "DescriptionId": "ITALIA",
+                        "Country": "IT",
+                        "SizeDescription": "36"
+                },
+                {
+                        "Id": "004",
+                        "DescriptionId": "UK",
+                        "Country": "GB",
+                        "SizeDescription": "4"
+                },
+                {
+                        "Id": "005",
+                        "DescriptionId": "FR",
+                        "Country": "FR",
+                        "SizeDescription": "32"
+                },
+                {
+                        "Id": "006",
+                        "DescriptionId": "USA",
+                        "Country": "US",
+                        "SizeDescription": "0"
+                },
+                {
+                        "Id": "007",
+                        "DescriptionId": "MEX",
+                        "Country": "MX",
+                        "SizeDescription": "0"
+                },
+                {
+                        "Id": "008",
+                        "DescriptionId": "CN",
+                        "Country": "CN",
+                        "SizeDescription": "155/58A"
+                },
+                {
+                        "Id": "009",
+                        "DescriptionId": "KR",
+                        "Country": "KR",
+                        "SizeDescription": "22"
+                },
+                {
+                        "Id": "900",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "901",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "910",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                }
+        ]
+}
+      Size Variant 2: 34
+      {
+        "itemQty": "106",
+        "EAN13": "8447692183901",
+        "Material": "26206040MP00234",
+        "COLOR": "WHITE",
+        "Phase_IN": "05.26",
+        "MangoColorCode": "01",
+        "MangoSizeCode": "34",
+        "MangoSAPSizeCode": "34",
+        "SizeName": "34",
+        "SizeNameES": "34",
+        "SizeNameFR": "34",
+        "SizeNameDE": "34",
+        "SizeNameIT": "38",
+        "SizeNameUK": "6",
+        "SizeNameUS": "2",
+        "SizeNameMX": "1",
+        "SizeNameCN": "155/60A",
+        "FillingWeight": "",
+        "stocksegment": "MA 0MNGUSA",
+        "PVP_ES": "39,99",
+        "CURRENCY_ES": "EUR",
+        "PVP_EU": "49,99",
+        "CURRENCY_EU": "EUR",
+        "PVP_IN": "5,490.00",
+        "CURRENCY_IN": "INR",
+        "GarmentMeasurements": [
+                {
+                        "Dim": "C",
+                        "Description": "Waist",
+                        "Measurement": "36"
+                },
+                {
+                        "Dim": "L19",
+                        "Description": "Side length",
+                        "Measurement": "109.9"
+                }
+        ],
+        "SizePack": {
+                "SizePackType": "PACK",
+                "SizePackQty": "1",
+                "TotalSizePackQty": "106",
+                "SizeBarCode": "8447692183901"
+        },
+        "SizeDescriptions": [
+                {
+                        "Id": "001",
+                        "DescriptionId": "SPAIN",
+                        "Country": "ES",
+                        "SizeDescription": "34"
+                },
+                {
+                        "Id": "002",
+                        "DescriptionId": "GERMANY",
+                        "Country": "GE",
+                        "SizeDescription": "34"
+                },
+                {
+                        "Id": "003",
+                        "DescriptionId": "ITALIA",
+                        "Country": "IT",
+                        "SizeDescription": "38"
+                },
+                {
+                        "Id": "004",
+                        "DescriptionId": "UK",
+                        "Country": "GB",
+                        "SizeDescription": "6"
+                },
+                {
+                        "Id": "005",
+                        "DescriptionId": "FR",
+                        "Country": "FR",
+                        "SizeDescription": "34"
+                },
+                {
+                        "Id": "006",
+                        "DescriptionId": "USA",
+                        "Country": "US",
+                        "SizeDescription": "2"
+                },
+                {
+                        "Id": "007",
+                        "DescriptionId": "MEX",
+                        "Country": "MX",
+                        "SizeDescription": "1"
+                },
+                {
+                        "Id": "008",
+                        "DescriptionId": "CN",
+                        "Country": "CN",
+                        "SizeDescription": "155/60A"
+                },
+                {
+                        "Id": "009",
+                        "DescriptionId": "KR",
+                        "Country": "KR",
+                        "SizeDescription": "24"
+                },
+                {
+                        "Id": "900",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "901",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "910",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                }
+        ]
+}
+      Size Variant 3: 36
+      {
+        "itemQty": "141",
+        "EAN13": "8447692183918",
+        "Material": "26206040MP00236",
+        "COLOR": "WHITE",
+        "Phase_IN": "05.26",
+        "MangoColorCode": "01",
+        "MangoSizeCode": "36",
+        "MangoSAPSizeCode": "36",
+        "SizeName": "36",
+        "SizeNameES": "36",
+        "SizeNameFR": "36",
+        "SizeNameDE": "36",
+        "SizeNameIT": "40",
+        "SizeNameUK": "8",
+        "SizeNameUS": "4",
+        "SizeNameMX": "3",
+        "SizeNameCN": "160/64A",
+        "FillingWeight": "",
+        "stocksegment": "MA 0MNGUSA",
+        "PVP_ES": "39,99",
+        "CURRENCY_ES": "EUR",
+        "PVP_EU": "49,99",
+        "CURRENCY_EU": "EUR",
+        "PVP_IN": "5,490.00",
+        "CURRENCY_IN": "INR",
+        "GarmentMeasurements": [
+                {
+                        "Dim": "C",
+                        "Description": "Waist",
+                        "Measurement": "38"
+                },
+                {
+                        "Dim": "L19",
+                        "Description": "Side length",
+                        "Measurement": "112.9"
+                }
+        ],
+        "SizePack": {
+                "SizePackType": "PACK",
+                "SizePackQty": "1",
+                "TotalSizePackQty": "141",
+                "SizeBarCode": "8447692183918"
+        },
+        "SizeDescriptions": [
+                {
+                        "Id": "001",
+                        "DescriptionId": "SPAIN",
+                        "Country": "ES",
+                        "SizeDescription": "36"
+                },
+                {
+                        "Id": "002",
+                        "DescriptionId": "GERMANY",
+                        "Country": "GE",
+                        "SizeDescription": "36"
+                },
+                {
+                        "Id": "003",
+                        "DescriptionId": "ITALIA",
+                        "Country": "IT",
+                        "SizeDescription": "40"
+                },
+                {
+                        "Id": "004",
+                        "DescriptionId": "UK",
+                        "Country": "GB",
+                        "SizeDescription": "8"
+                },
+                {
+                        "Id": "005",
+                        "DescriptionId": "FR",
+                        "Country": "FR",
+                        "SizeDescription": "36"
+                },
+                {
+                        "Id": "006",
+                        "DescriptionId": "USA",
+                        "Country": "US",
+                        "SizeDescription": "4"
+                },
+                {
+                        "Id": "007",
+                        "DescriptionId": "MEX",
+                        "Country": "MX",
+                        "SizeDescription": "3"
+                },
+                {
+                        "Id": "008",
+                        "DescriptionId": "CN",
+                        "Country": "CN",
+                        "SizeDescription": "160/64A"
+                },
+                {
+                        "Id": "009",
+                        "DescriptionId": "KR",
+                        "Country": "KR",
+                        "SizeDescription": "26"
+                },
+                {
+                        "Id": "900",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "901",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "910",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                }
+        ]
+}
+      Size Variant 4: 38
+      {
+        "itemQty": "124",
+        "EAN13": "8447692183925",
+        "Material": "26206040MP00238",
+        "COLOR": "WHITE",
+        "Phase_IN": "05.26",
+        "MangoColorCode": "01",
+        "MangoSizeCode": "38",
+        "MangoSAPSizeCode": "38",
+        "SizeName": "38",
+        "SizeNameES": "38",
+        "SizeNameFR": "38",
+        "SizeNameDE": "38",
+        "SizeNameIT": "42",
+        "SizeNameUK": "10",
+        "SizeNameUS": "6",
+        "SizeNameMX": "5",
+        "SizeNameCN": "165/68A",
+        "FillingWeight": "",
+        "stocksegment": "MA 0MNGUSA",
+        "PVP_ES": "39,99",
+        "CURRENCY_ES": "EUR",
+        "PVP_EU": "49,99",
+        "CURRENCY_EU": "EUR",
+        "PVP_IN": "5,490.00",
+        "CURRENCY_IN": "INR",
+        "GarmentMeasurements": [
+                {
+                        "Dim": "C",
+                        "Description": "Waist",
+                        "Measurement": "40"
+                },
+                {
+                        "Dim": "L19",
+                        "Description": "Side length",
+                        "Measurement": "113.5"
+                }
+        ],
+        "SizePack": {
+                "SizePackType": "PACK",
+                "SizePackQty": "1",
+                "TotalSizePackQty": "124",
+                "SizeBarCode": "8447692183925"
+        },
+        "SizeDescriptions": [
+                {
+                        "Id": "001",
+                        "DescriptionId": "SPAIN",
+                        "Country": "ES",
+                        "SizeDescription": "38"
+                },
+                {
+                        "Id": "002",
+                        "DescriptionId": "GERMANY",
+                        "Country": "GE",
+                        "SizeDescription": "38"
+                },
+                {
+                        "Id": "003",
+                        "DescriptionId": "ITALIA",
+                        "Country": "IT",
+                        "SizeDescription": "42"
+                },
+                {
+                        "Id": "004",
+                        "DescriptionId": "UK",
+                        "Country": "GB",
+                        "SizeDescription": "10"
+                },
+                {
+                        "Id": "005",
+                        "DescriptionId": "FR",
+                        "Country": "FR",
+                        "SizeDescription": "38"
+                },
+                {
+                        "Id": "006",
+                        "DescriptionId": "USA",
+                        "Country": "US",
+                        "SizeDescription": "6"
+                },
+                {
+                        "Id": "007",
+                        "DescriptionId": "MEX",
+                        "Country": "MX",
+                        "SizeDescription": "5"
+                },
+                {
+                        "Id": "008",
+                        "DescriptionId": "CN",
+                        "Country": "CN",
+                        "SizeDescription": "165/68A"
+                },
+                {
+                        "Id": "009",
+                        "DescriptionId": "KR",
+                        "Country": "KR",
+                        "SizeDescription": "28"
+                },
+                {
+                        "Id": "900",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "901",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "910",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                }
+        ]
+}
+      Size Variant 5: 40
+      {
+        "itemQty": "75",
+        "EAN13": "8447692183932",
+        "Material": "26206040MP00240",
+        "COLOR": "WHITE",
+        "Phase_IN": "05.26",
+        "MangoColorCode": "01",
+        "MangoSizeCode": "40",
+        "MangoSAPSizeCode": "40",
+        "SizeName": "40",
+        "SizeNameES": "40",
+        "SizeNameFR": "40",
+        "SizeNameDE": "40",
+        "SizeNameIT": "44",
+        "SizeNameUK": "12",
+        "SizeNameUS": "8",
+        "SizeNameMX": "7",
+        "SizeNameCN": "170/72A",
+        "FillingWeight": "",
+        "stocksegment": "MA 0MNGUSA",
+        "PVP_ES": "39,99",
+        "CURRENCY_ES": "EUR",
+        "PVP_EU": "49,99",
+        "CURRENCY_EU": "EUR",
+        "PVP_IN": "5,490.00",
+        "CURRENCY_IN": "INR",
+        "GarmentMeasurements": [
+                {
+                        "Dim": "C",
+                        "Description": "Waist",
+                        "Measurement": "42"
+                },
+                {
+                        "Dim": "L19",
+                        "Description": "Side length",
+                        "Measurement": "114.1"
+                }
+        ],
+        "SizePack": {
+                "SizePackType": "PACK",
+                "SizePackQty": "1",
+                "TotalSizePackQty": "75",
+                "SizeBarCode": "8447692183932"
+        },
+        "SizeDescriptions": [
+                {
+                        "Id": "001",
+                        "DescriptionId": "SPAIN",
+                        "Country": "ES",
+                        "SizeDescription": "40"
+                },
+                {
+                        "Id": "002",
+                        "DescriptionId": "GERMANY",
+                        "Country": "GE",
+                        "SizeDescription": "40"
+                },
+                {
+                        "Id": "003",
+                        "DescriptionId": "ITALIA",
+                        "Country": "IT",
+                        "SizeDescription": "44"
+                },
+                {
+                        "Id": "004",
+                        "DescriptionId": "UK",
+                        "Country": "GB",
+                        "SizeDescription": "12"
+                },
+                {
+                        "Id": "005",
+                        "DescriptionId": "FR",
+                        "Country": "FR",
+                        "SizeDescription": "40"
+                },
+                {
+                        "Id": "006",
+                        "DescriptionId": "USA",
+                        "Country": "US",
+                        "SizeDescription": "8"
+                },
+                {
+                        "Id": "007",
+                        "DescriptionId": "MEX",
+                        "Country": "MX",
+                        "SizeDescription": "7"
+                },
+                {
+                        "Id": "008",
+                        "DescriptionId": "CN",
+                        "Country": "CN",
+                        "SizeDescription": "170/72A"
+                },
+                {
+                        "Id": "009",
+                        "DescriptionId": "KR",
+                        "Country": "KR",
+                        "SizeDescription": "30"
+                },
+                {
+                        "Id": "900",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "901",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "910",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                }
+        ]
+}
+      Size Variant 6: 42
+      {
+        "itemQty": "42",
+        "EAN13": "8447692183949",
+        "Material": "26206040MP00242",
+        "COLOR": "WHITE",
+        "Phase_IN": "05.26",
+        "MangoColorCode": "01",
+        "MangoSizeCode": "42",
+        "MangoSAPSizeCode": "42",
+        "SizeName": "42",
+        "SizeNameES": "42",
+        "SizeNameFR": "42",
+        "SizeNameDE": "42",
+        "SizeNameIT": "46",
+        "SizeNameUK": "14",
+        "SizeNameUS": "10",
+        "SizeNameMX": "9",
+        "SizeNameCN": "170/74A",
+        "FillingWeight": "",
+        "stocksegment": "MA 0MNGUSA",
+        "PVP_ES": "39,99",
+        "CURRENCY_ES": "EUR",
+        "PVP_EU": "49,99",
+        "CURRENCY_EU": "EUR",
+        "PVP_IN": "5,490.00",
+        "CURRENCY_IN": "INR",
+        "GarmentMeasurements": [
+                {
+                        "Dim": "C",
+                        "Description": "Waist",
+                        "Measurement": "44"
+                },
+                {
+                        "Dim": "L19",
+                        "Description": "Side length",
+                        "Measurement": "114.7"
+                }
+        ],
+        "SizePack": {
+                "SizePackType": "PACK",
+                "SizePackQty": "1",
+                "TotalSizePackQty": "42",
+                "SizeBarCode": "8447692183949"
+        },
+        "SizeDescriptions": [
+                {
+                        "Id": "001",
+                        "DescriptionId": "SPAIN",
+                        "Country": "ES",
+                        "SizeDescription": "42"
+                },
+                {
+                        "Id": "002",
+                        "DescriptionId": "GERMANY",
+                        "Country": "GE",
+                        "SizeDescription": "42"
+                },
+                {
+                        "Id": "003",
+                        "DescriptionId": "ITALIA",
+                        "Country": "IT",
+                        "SizeDescription": "46"
+                },
+                {
+                        "Id": "004",
+                        "DescriptionId": "UK",
+                        "Country": "GB",
+                        "SizeDescription": "14"
+                },
+                {
+                        "Id": "005",
+                        "DescriptionId": "FR",
+                        "Country": "FR",
+                        "SizeDescription": "42"
+                },
+                {
+                        "Id": "006",
+                        "DescriptionId": "USA",
+                        "Country": "US",
+                        "SizeDescription": "10"
+                },
+                {
+                        "Id": "007",
+                        "DescriptionId": "MEX",
+                        "Country": "MX",
+                        "SizeDescription": "9"
+                },
+                {
+                        "Id": "008",
+                        "DescriptionId": "CN",
+                        "Country": "CN",
+                        "SizeDescription": "170/74A"
+                },
+                {
+                        "Id": "009",
+                        "DescriptionId": "KR",
+                        "Country": "KR",
+                        "SizeDescription": "32"
+                },
+                {
+                        "Id": "900",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "901",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "910",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                }
+        ]
+}
+
+  [E] ORIGIN/DESTINATION DATA:
+      Origin: {
+        "countryorigin": "Morocco",
+        "Code_Country": "MA"
+}
+      Destination: {
+        "dc": "LLIÇÀ",
+        "dc_address": "Polígono Industrial Can Moncau 6 Parcelas B1 y B208186 Lliçá d’Amunt ES",
+        "de_code": "D001"
+}
+
+========================================================================================================================
+
+
+[2] JSON: LabelID = 'GI000PRO'
+Vendor: 1052603 | Variable: 1
+→ PDF File: GI000DPO-SAP_1.pdf
+→ Purpose: Composition Label Template (sewn-in)
+
+------------------------------------------------------------------------------------------------------------------------
+
+FULL ORIGINAL JSON DATA FOR THIS LABEL:
+{
+  "Vendor": "1052603",
+  "LabelID": "GI000PRO",
+  "Variable": "1"
+}
+
+RELATED DATA SETS UNDER THIS GROUP:
+
+  [A] COMPOSITION DATA (2 material groups):
+      Group 1: COMPOSITION
+      {
+        "TitleCode": "T001",
+        "TitleName": "COMPOSITION",
+        "Fabric": [
+                {
+                        "FabricName": "COTTON",
+                        "Fabricode": "C005",
+                        "FabricTypeSymbol": "TEXTILE",
+                        "FabricPercent": "082"
+                },
+                {
+                        "FabricName": "ELASTANE",
+                        "Fabricode": "C049",
+                        "FabricTypeSymbol": "TEXTILE",
+                        "FabricPercent": "003"
+                },
+                {
+                        "FabricName": "POLYAMIDE",
+                        "Fabricode": "C143",
+                        "FabricTypeSymbol": "TEXTILE",
+                        "FabricPercent": "015"
+                }
+        ]
+}
+      Group 2: LINING
+      {
+        "TitleCode": "T005",
+        "TitleName": "LINING",
+        "Fabric": [
+                {
+                        "FabricName": "VISCOSE",
+                        "Fabricode": "C176",
+                        "FabricTypeSymbol": "TEXTILE",
+                        "FabricPercent": "100"
+                }
+        ]
+}
+
+  [B] CARE INSTRUCTIONS (6 instructions):
+      Instruction 1:
+      {
+        "CareName": "MACHINE WASH UP TO 30°C / 85ºF",
+        "CareCode": "S01",
+        "CareSAPCode": "1",
+        "CareGroup": "Wash"
+}
+      Instruction 2:
+      {
+        "CareName": "DO NOT BLEACH",
+        "CareCode": "S12",
+        "CareSAPCode": "1",
+        "CareGroup": "Bleach"
+}
+      Instruction 3:
+      {
+        "CareName": "IRON UP TO 150°C / 300ºF",
+        "CareCode": "S14",
+        "CareSAPCode": "1",
+        "CareGroup": "Iron"
+}
+      Instruction 4:
+      {
+        "CareName": "DRY CLEANING PERCHLOROETHYLENE",
+        "CareCode": "S21",
+        "CareSAPCode": "4",
+        "CareGroup": "Dry Clean"
+}
+      Instruction 5:
+      {
+        "CareName": "DO NOT DRY IN A TUMBLE DRIER",
+        "CareCode": "S25",
+        "CareSAPCode": "1",
+        "CareGroup": "Dry"
+}
+      Instruction 6:
+      {
+        "CareName": "DRY FLAT",
+        "CareCode": "N045",
+        "CareSAPCode": "N045",
+        "CareGroup": "Additional"
+}
+
+  [C] SIZE/ITEM DATA (6 size variants):
+      Size Variant 1: 32
+      {
+        "itemQty": "12",
+        "EAN13": "8447692183895",
+        "Material": "26206040MP00232",
+        "COLOR": "WHITE",
+        "Phase_IN": "05.26",
+        "MangoColorCode": "01",
+        "MangoSizeCode": "32",
+        "MangoSAPSizeCode": "32",
+        "SizeName": "32",
+        "SizeNameES": "32",
+        "SizeNameFR": "32",
+        "SizeNameDE": "32",
+        "SizeNameIT": "36",
+        "SizeNameUK": "4",
+        "SizeNameUS": "0",
+        "SizeNameMX": "0",
+        "SizeNameCN": "155/58A",
+        "FillingWeight": "",
+        "stocksegment": "MA 0MNGUSA",
+        "PVP_ES": "39,99",
+        "CURRENCY_ES": "EUR",
+        "PVP_EU": "49,99",
+        "CURRENCY_EU": "EUR",
+        "PVP_IN": "5,490.00",
+        "CURRENCY_IN": "INR",
+        "GarmentMeasurements": [
+                {
+                        "Dim": "C",
+                        "Description": "Waist",
+                        "Measurement": "34.5"
+                },
+                {
+                        "Dim": "L19",
+                        "Description": "Side length",
+                        "Measurement": "108.4"
+                }
+        ],
+        "SizePack": {
+                "SizePackType": "PACK",
+                "SizePackQty": "1",
+                "TotalSizePackQty": "12",
+                "SizeBarCode": "8447692183895"
+        },
+        "SizeDescriptions": [
+                {
+                        "Id": "001",
+                        "DescriptionId": "SPAIN",
+                        "Country": "ES",
+                        "SizeDescription": "32"
+                },
+                {
+                        "Id": "002",
+                        "DescriptionId": "GERMANY",
+                        "Country": "GE",
+                        "SizeDescription": "32"
+                },
+                {
+                        "Id": "003",
+                        "DescriptionId": "ITALIA",
+                        "Country": "IT",
+                        "SizeDescription": "36"
+                },
+                {
+                        "Id": "004",
+                        "DescriptionId": "UK",
+                        "Country": "GB",
+                        "SizeDescription": "4"
+                },
+                {
+                        "Id": "005",
+                        "DescriptionId": "FR",
+                        "Country": "FR",
+                        "SizeDescription": "32"
+                },
+                {
+                        "Id": "006",
+                        "DescriptionId": "USA",
+                        "Country": "US",
+                        "SizeDescription": "0"
+                },
+                {
+                        "Id": "007",
+                        "DescriptionId": "MEX",
+                        "Country": "MX",
+                        "SizeDescription": "0"
+                },
+                {
+                        "Id": "008",
+                        "DescriptionId": "CN",
+                        "Country": "CN",
+                        "SizeDescription": "155/58A"
+                },
+                {
+                        "Id": "009",
+                        "DescriptionId": "KR",
+                        "Country": "KR",
+                        "SizeDescription": "22"
+                },
+                {
+                        "Id": "900",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "901",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "910",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                }
+        ]
+}
+      Size Variant 2: 34
+      {
+        "itemQty": "106",
+        "EAN13": "8447692183901",
+        "Material": "26206040MP00234",
+        "COLOR": "WHITE",
+        "Phase_IN": "05.26",
+        "MangoColorCode": "01",
+        "MangoSizeCode": "34",
+        "MangoSAPSizeCode": "34",
+        "SizeName": "34",
+        "SizeNameES": "34",
+        "SizeNameFR": "34",
+        "SizeNameDE": "34",
+        "SizeNameIT": "38",
+        "SizeNameUK": "6",
+        "SizeNameUS": "2",
+        "SizeNameMX": "1",
+        "SizeNameCN": "155/60A",
+        "FillingWeight": "",
+        "stocksegment": "MA 0MNGUSA",
+        "PVP_ES": "39,99",
+        "CURRENCY_ES": "EUR",
+        "PVP_EU": "49,99",
+        "CURRENCY_EU": "EUR",
+        "PVP_IN": "5,490.00",
+        "CURRENCY_IN": "INR",
+        "GarmentMeasurements": [
+                {
+                        "Dim": "C",
+                        "Description": "Waist",
+                        "Measurement": "36"
+                },
+                {
+                        "Dim": "L19",
+                        "Description": "Side length",
+                        "Measurement": "109.9"
+                }
+        ],
+        "SizePack": {
+                "SizePackType": "PACK",
+                "SizePackQty": "1",
+                "TotalSizePackQty": "106",
+                "SizeBarCode": "8447692183901"
+        },
+        "SizeDescriptions": [
+                {
+                        "Id": "001",
+                        "DescriptionId": "SPAIN",
+                        "Country": "ES",
+                        "SizeDescription": "34"
+                },
+                {
+                        "Id": "002",
+                        "DescriptionId": "GERMANY",
+                        "Country": "GE",
+                        "SizeDescription": "34"
+                },
+                {
+                        "Id": "003",
+                        "DescriptionId": "ITALIA",
+                        "Country": "IT",
+                        "SizeDescription": "38"
+                },
+                {
+                        "Id": "004",
+                        "DescriptionId": "UK",
+                        "Country": "GB",
+                        "SizeDescription": "6"
+                },
+                {
+                        "Id": "005",
+                        "DescriptionId": "FR",
+                        "Country": "FR",
+                        "SizeDescription": "34"
+                },
+                {
+                        "Id": "006",
+                        "DescriptionId": "USA",
+                        "Country": "US",
+                        "SizeDescription": "2"
+                },
+                {
+                        "Id": "007",
+                        "DescriptionId": "MEX",
+                        "Country": "MX",
+                        "SizeDescription": "1"
+                },
+                {
+                        "Id": "008",
+                        "DescriptionId": "CN",
+                        "Country": "CN",
+                        "SizeDescription": "155/60A"
+                },
+                {
+                        "Id": "009",
+                        "DescriptionId": "KR",
+                        "Country": "KR",
+                        "SizeDescription": "24"
+                },
+                {
+                        "Id": "900",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "901",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "910",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                }
+        ]
+}
+      Size Variant 3: 36
+      {
+        "itemQty": "141",
+        "EAN13": "8447692183918",
+        "Material": "26206040MP00236",
+        "COLOR": "WHITE",
+        "Phase_IN": "05.26",
+        "MangoColorCode": "01",
+        "MangoSizeCode": "36",
+        "MangoSAPSizeCode": "36",
+        "SizeName": "36",
+        "SizeNameES": "36",
+        "SizeNameFR": "36",
+        "SizeNameDE": "36",
+        "SizeNameIT": "40",
+        "SizeNameUK": "8",
+        "SizeNameUS": "4",
+        "SizeNameMX": "3",
+        "SizeNameCN": "160/64A",
+        "FillingWeight": "",
+        "stocksegment": "MA 0MNGUSA",
+        "PVP_ES": "39,99",
+        "CURRENCY_ES": "EUR",
+        "PVP_EU": "49,99",
+        "CURRENCY_EU": "EUR",
+        "PVP_IN": "5,490.00",
+        "CURRENCY_IN": "INR",
+        "GarmentMeasurements": [
+                {
+                        "Dim": "C",
+                        "Description": "Waist",
+                        "Measurement": "38"
+                },
+                {
+                        "Dim": "L19",
+                        "Description": "Side length",
+                        "Measurement": "112.9"
+                }
+        ],
+        "SizePack": {
+                "SizePackType": "PACK",
+                "SizePackQty": "1",
+                "TotalSizePackQty": "141",
+                "SizeBarCode": "8447692183918"
+        },
+        "SizeDescriptions": [
+                {
+                        "Id": "001",
+                        "DescriptionId": "SPAIN",
+                        "Country": "ES",
+                        "SizeDescription": "36"
+                },
+                {
+                        "Id": "002",
+                        "DescriptionId": "GERMANY",
+                        "Country": "GE",
+                        "SizeDescription": "36"
+                },
+                {
+                        "Id": "003",
+                        "DescriptionId": "ITALIA",
+                        "Country": "IT",
+                        "SizeDescription": "40"
+                },
+                {
+                        "Id": "004",
+                        "DescriptionId": "UK",
+                        "Country": "GB",
+                        "SizeDescription": "8"
+                },
+                {
+                        "Id": "005",
+                        "DescriptionId": "FR",
+                        "Country": "FR",
+                        "SizeDescription": "36"
+                },
+                {
+                        "Id": "006",
+                        "DescriptionId": "USA",
+                        "Country": "US",
+                        "SizeDescription": "4"
+                },
+                {
+                        "Id": "007",
+                        "DescriptionId": "MEX",
+                        "Country": "MX",
+                        "SizeDescription": "3"
+                },
+                {
+                        "Id": "008",
+                        "DescriptionId": "CN",
+                        "Country": "CN",
+                        "SizeDescription": "160/64A"
+                },
+                {
+                        "Id": "009",
+                        "DescriptionId": "KR",
+                        "Country": "KR",
+                        "SizeDescription": "26"
+                },
+                {
+                        "Id": "900",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "901",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "910",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                }
+        ]
+}
+      Size Variant 4: 38
+      {
+        "itemQty": "124",
+        "EAN13": "8447692183925",
+        "Material": "26206040MP00238",
+        "COLOR": "WHITE",
+        "Phase_IN": "05.26",
+        "MangoColorCode": "01",
+        "MangoSizeCode": "38",
+        "MangoSAPSizeCode": "38",
+        "SizeName": "38",
+        "SizeNameES": "38",
+        "SizeNameFR": "38",
+        "SizeNameDE": "38",
+        "SizeNameIT": "42",
+        "SizeNameUK": "10",
+        "SizeNameUS": "6",
+        "SizeNameMX": "5",
+        "SizeNameCN": "165/68A",
+        "FillingWeight": "",
+        "stocksegment": "MA 0MNGUSA",
+        "PVP_ES": "39,99",
+        "CURRENCY_ES": "EUR",
+        "PVP_EU": "49,99",
+        "CURRENCY_EU": "EUR",
+        "PVP_IN": "5,490.00",
+        "CURRENCY_IN": "INR",
+        "GarmentMeasurements": [
+                {
+                        "Dim": "C",
+                        "Description": "Waist",
+                        "Measurement": "40"
+                },
+                {
+                        "Dim": "L19",
+                        "Description": "Side length",
+                        "Measurement": "113.5"
+                }
+        ],
+        "SizePack": {
+                "SizePackType": "PACK",
+                "SizePackQty": "1",
+                "TotalSizePackQty": "124",
+                "SizeBarCode": "8447692183925"
+        },
+        "SizeDescriptions": [
+                {
+                        "Id": "001",
+                        "DescriptionId": "SPAIN",
+                        "Country": "ES",
+                        "SizeDescription": "38"
+                },
+                {
+                        "Id": "002",
+                        "DescriptionId": "GERMANY",
+                        "Country": "GE",
+                        "SizeDescription": "38"
+                },
+                {
+                        "Id": "003",
+                        "DescriptionId": "ITALIA",
+                        "Country": "IT",
+                        "SizeDescription": "42"
+                },
+                {
+                        "Id": "004",
+                        "DescriptionId": "UK",
+                        "Country": "GB",
+                        "SizeDescription": "10"
+                },
+                {
+                        "Id": "005",
+                        "DescriptionId": "FR",
+                        "Country": "FR",
+                        "SizeDescription": "38"
+                },
+                {
+                        "Id": "006",
+                        "DescriptionId": "USA",
+                        "Country": "US",
+                        "SizeDescription": "6"
+                },
+                {
+                        "Id": "007",
+                        "DescriptionId": "MEX",
+                        "Country": "MX",
+                        "SizeDescription": "5"
+                },
+                {
+                        "Id": "008",
+                        "DescriptionId": "CN",
+                        "Country": "CN",
+                        "SizeDescription": "165/68A"
+                },
+                {
+                        "Id": "009",
+                        "DescriptionId": "KR",
+                        "Country": "KR",
+                        "SizeDescription": "28"
+                },
+                {
+                        "Id": "900",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "901",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "910",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                }
+        ]
+}
+      Size Variant 5: 40
+      {
+        "itemQty": "75",
+        "EAN13": "8447692183932",
+        "Material": "26206040MP00240",
+        "COLOR": "WHITE",
+        "Phase_IN": "05.26",
+        "MangoColorCode": "01",
+        "MangoSizeCode": "40",
+        "MangoSAPSizeCode": "40",
+        "SizeName": "40",
+        "SizeNameES": "40",
+        "SizeNameFR": "40",
+        "SizeNameDE": "40",
+        "SizeNameIT": "44",
+        "SizeNameUK": "12",
+        "SizeNameUS": "8",
+        "SizeNameMX": "7",
+        "SizeNameCN": "170/72A",
+        "FillingWeight": "",
+        "stocksegment": "MA 0MNGUSA",
+        "PVP_ES": "39,99",
+        "CURRENCY_ES": "EUR",
+        "PVP_EU": "49,99",
+        "CURRENCY_EU": "EUR",
+        "PVP_IN": "5,490.00",
+        "CURRENCY_IN": "INR",
+        "GarmentMeasurements": [
+                {
+                        "Dim": "C",
+                        "Description": "Waist",
+                        "Measurement": "42"
+                },
+                {
+                        "Dim": "L19",
+                        "Description": "Side length",
+                        "Measurement": "114.1"
+                }
+        ],
+        "SizePack": {
+                "SizePackType": "PACK",
+                "SizePackQty": "1",
+                "TotalSizePackQty": "75",
+                "SizeBarCode": "8447692183932"
+        },
+        "SizeDescriptions": [
+                {
+                        "Id": "001",
+                        "DescriptionId": "SPAIN",
+                        "Country": "ES",
+                        "SizeDescription": "40"
+                },
+                {
+                        "Id": "002",
+                        "DescriptionId": "GERMANY",
+                        "Country": "GE",
+                        "SizeDescription": "40"
+                },
+                {
+                        "Id": "003",
+                        "DescriptionId": "ITALIA",
+                        "Country": "IT",
+                        "SizeDescription": "44"
+                },
+                {
+                        "Id": "004",
+                        "DescriptionId": "UK",
+                        "Country": "GB",
+                        "SizeDescription": "12"
+                },
+                {
+                        "Id": "005",
+                        "DescriptionId": "FR",
+                        "Country": "FR",
+                        "SizeDescription": "40"
+                },
+                {
+                        "Id": "006",
+                        "DescriptionId": "USA",
+                        "Country": "US",
+                        "SizeDescription": "8"
+                },
+                {
+                        "Id": "007",
+                        "DescriptionId": "MEX",
+                        "Country": "MX",
+                        "SizeDescription": "7"
+                },
+                {
+                        "Id": "008",
+                        "DescriptionId": "CN",
+                        "Country": "CN",
+                        "SizeDescription": "170/72A"
+                },
+                {
+                        "Id": "009",
+                        "DescriptionId": "KR",
+                        "Country": "KR",
+                        "SizeDescription": "30"
+                },
+                {
+                        "Id": "900",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "901",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "910",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                }
+        ]
+}
+      Size Variant 6: 42
+      {
+        "itemQty": "42",
+        "EAN13": "8447692183949",
+        "Material": "26206040MP00242",
+        "COLOR": "WHITE",
+        "Phase_IN": "05.26",
+        "MangoColorCode": "01",
+        "MangoSizeCode": "42",
+        "MangoSAPSizeCode": "42",
+        "SizeName": "42",
+        "SizeNameES": "42",
+        "SizeNameFR": "42",
+        "SizeNameDE": "42",
+        "SizeNameIT": "46",
+        "SizeNameUK": "14",
+        "SizeNameUS": "10",
+        "SizeNameMX": "9",
+        "SizeNameCN": "170/74A",
+        "FillingWeight": "",
+        "stocksegment": "MA 0MNGUSA",
+        "PVP_ES": "39,99",
+        "CURRENCY_ES": "EUR",
+        "PVP_EU": "49,99",
+        "CURRENCY_EU": "EUR",
+        "PVP_IN": "5,490.00",
+        "CURRENCY_IN": "INR",
+        "GarmentMeasurements": [
+                {
+                        "Dim": "C",
+                        "Description": "Waist",
+                        "Measurement": "44"
+                },
+                {
+                        "Dim": "L19",
+                        "Description": "Side length",
+                        "Measurement": "114.7"
+                }
+        ],
+        "SizePack": {
+                "SizePackType": "PACK",
+                "SizePackQty": "1",
+                "TotalSizePackQty": "42",
+                "SizeBarCode": "8447692183949"
+        },
+        "SizeDescriptions": [
+                {
+                        "Id": "001",
+                        "DescriptionId": "SPAIN",
+                        "Country": "ES",
+                        "SizeDescription": "42"
+                },
+                {
+                        "Id": "002",
+                        "DescriptionId": "GERMANY",
+                        "Country": "GE",
+                        "SizeDescription": "42"
+                },
+                {
+                        "Id": "003",
+                        "DescriptionId": "ITALIA",
+                        "Country": "IT",
+                        "SizeDescription": "46"
+                },
+                {
+                        "Id": "004",
+                        "DescriptionId": "UK",
+                        "Country": "GB",
+                        "SizeDescription": "14"
+                },
+                {
+                        "Id": "005",
+                        "DescriptionId": "FR",
+                        "Country": "FR",
+                        "SizeDescription": "42"
+                },
+                {
+                        "Id": "006",
+                        "DescriptionId": "USA",
+                        "Country": "US",
+                        "SizeDescription": "10"
+                },
+                {
+                        "Id": "007",
+                        "DescriptionId": "MEX",
+                        "Country": "MX",
+                        "SizeDescription": "9"
+                },
+                {
+                        "Id": "008",
+                        "DescriptionId": "CN",
+                        "Country": "CN",
+                        "SizeDescription": "170/74A"
+                },
+                {
+                        "Id": "009",
+                        "DescriptionId": "KR",
+                        "Country": "KR",
+                        "SizeDescription": "32"
+                },
+                {
+                        "Id": "900",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "901",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "910",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                }
+        ]
+}
+
+  [E] ORIGIN/DESTINATION DATA:
+      Origin: {
+        "countryorigin": "Morocco",
+        "Code_Country": "MA"
+}
+      Destination: {
+        "dc": "LLIÇÀ",
+        "dc_address": "Polígono Industrial Can Moncau 6 Parcelas B1 y B208186 Lliçá d’Amunt ES",
+        "de_code": "D001"
+}
+
+========================================================================================================================
+
+
+[3] JSON: LabelID = 'PVP002XG'
+Vendor: 1052603 | Variable: 1
+→ PDF File: PVPV0102-PVP002XG.pdf
+→ Purpose: Price Tag with RFID (90x58mm)
+
+------------------------------------------------------------------------------------------------------------------------
+
+FULL ORIGINAL JSON DATA FOR THIS LABEL:
+{
+  "Vendor": "1052603",
+  "LabelID": "PVP002XG",
+  "Variable": "1"
+}
+
+RELATED DATA SETS UNDER THIS GROUP:
+
+  [C] SIZE/ITEM DATA (6 size variants):
+      Size Variant 1: 32
+      {
+        "itemQty": "12",
+        "EAN13": "8447692183895",
+        "Material": "26206040MP00232",
+        "COLOR": "WHITE",
+        "Phase_IN": "05.26",
+        "MangoColorCode": "01",
+        "MangoSizeCode": "32",
+        "MangoSAPSizeCode": "32",
+        "SizeName": "32",
+        "SizeNameES": "32",
+        "SizeNameFR": "32",
+        "SizeNameDE": "32",
+        "SizeNameIT": "36",
+        "SizeNameUK": "4",
+        "SizeNameUS": "0",
+        "SizeNameMX": "0",
+        "SizeNameCN": "155/58A",
+        "FillingWeight": "",
+        "stocksegment": "MA 0MNGUSA",
+        "PVP_ES": "39,99",
+        "CURRENCY_ES": "EUR",
+        "PVP_EU": "49,99",
+        "CURRENCY_EU": "EUR",
+        "PVP_IN": "5,490.00",
+        "CURRENCY_IN": "INR",
+        "GarmentMeasurements": [
+                {
+                        "Dim": "C",
+                        "Description": "Waist",
+                        "Measurement": "34.5"
+                },
+                {
+                        "Dim": "L19",
+                        "Description": "Side length",
+                        "Measurement": "108.4"
+                }
+        ],
+        "SizePack": {
+                "SizePackType": "PACK",
+                "SizePackQty": "1",
+                "TotalSizePackQty": "12",
+                "SizeBarCode": "8447692183895"
+        },
+        "SizeDescriptions": [
+                {
+                        "Id": "001",
+                        "DescriptionId": "SPAIN",
+                        "Country": "ES",
+                        "SizeDescription": "32"
+                },
+                {
+                        "Id": "002",
+                        "DescriptionId": "GERMANY",
+                        "Country": "GE",
+                        "SizeDescription": "32"
+                },
+                {
+                        "Id": "003",
+                        "DescriptionId": "ITALIA",
+                        "Country": "IT",
+                        "SizeDescription": "36"
+                },
+                {
+                        "Id": "004",
+                        "DescriptionId": "UK",
+                        "Country": "GB",
+                        "SizeDescription": "4"
+                },
+                {
+                        "Id": "005",
+                        "DescriptionId": "FR",
+                        "Country": "FR",
+                        "SizeDescription": "32"
+                },
+                {
+                        "Id": "006",
+                        "DescriptionId": "USA",
+                        "Country": "US",
+                        "SizeDescription": "0"
+                },
+                {
+                        "Id": "007",
+                        "DescriptionId": "MEX",
+                        "Country": "MX",
+                        "SizeDescription": "0"
+                },
+                {
+                        "Id": "008",
+                        "DescriptionId": "CN",
+                        "Country": "CN",
+                        "SizeDescription": "155/58A"
+                },
+                {
+                        "Id": "009",
+                        "DescriptionId": "KR",
+                        "Country": "KR",
+                        "SizeDescription": "22"
+                },
+                {
+                        "Id": "900",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "901",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "910",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                }
+        ]
+}
+      Size Variant 2: 34
+      {
+        "itemQty": "106",
+        "EAN13": "8447692183901",
+        "Material": "26206040MP00234",
+        "COLOR": "WHITE",
+        "Phase_IN": "05.26",
+        "MangoColorCode": "01",
+        "MangoSizeCode": "34",
+        "MangoSAPSizeCode": "34",
+        "SizeName": "34",
+        "SizeNameES": "34",
+        "SizeNameFR": "34",
+        "SizeNameDE": "34",
+        "SizeNameIT": "38",
+        "SizeNameUK": "6",
+        "SizeNameUS": "2",
+        "SizeNameMX": "1",
+        "SizeNameCN": "155/60A",
+        "FillingWeight": "",
+        "stocksegment": "MA 0MNGUSA",
+        "PVP_ES": "39,99",
+        "CURRENCY_ES": "EUR",
+        "PVP_EU": "49,99",
+        "CURRENCY_EU": "EUR",
+        "PVP_IN": "5,490.00",
+        "CURRENCY_IN": "INR",
+        "GarmentMeasurements": [
+                {
+                        "Dim": "C",
+                        "Description": "Waist",
+                        "Measurement": "36"
+                },
+                {
+                        "Dim": "L19",
+                        "Description": "Side length",
+                        "Measurement": "109.9"
+                }
+        ],
+        "SizePack": {
+                "SizePackType": "PACK",
+                "SizePackQty": "1",
+                "TotalSizePackQty": "106",
+                "SizeBarCode": "8447692183901"
+        },
+        "SizeDescriptions": [
+                {
+                        "Id": "001",
+                        "DescriptionId": "SPAIN",
+                        "Country": "ES",
+                        "SizeDescription": "34"
+                },
+                {
+                        "Id": "002",
+                        "DescriptionId": "GERMANY",
+                        "Country": "GE",
+                        "SizeDescription": "34"
+                },
+                {
+                        "Id": "003",
+                        "DescriptionId": "ITALIA",
+                        "Country": "IT",
+                        "SizeDescription": "38"
+                },
+                {
+                        "Id": "004",
+                        "DescriptionId": "UK",
+                        "Country": "GB",
+                        "SizeDescription": "6"
+                },
+                {
+                        "Id": "005",
+                        "DescriptionId": "FR",
+                        "Country": "FR",
+                        "SizeDescription": "34"
+                },
+                {
+                        "Id": "006",
+                        "DescriptionId": "USA",
+                        "Country": "US",
+                        "SizeDescription": "2"
+                },
+                {
+                        "Id": "007",
+                        "DescriptionId": "MEX",
+                        "Country": "MX",
+                        "SizeDescription": "1"
+                },
+                {
+                        "Id": "008",
+                        "DescriptionId": "CN",
+                        "Country": "CN",
+                        "SizeDescription": "155/60A"
+                },
+                {
+                        "Id": "009",
+                        "DescriptionId": "KR",
+                        "Country": "KR",
+                        "SizeDescription": "24"
+                },
+                {
+                        "Id": "900",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "901",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "910",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                }
+        ]
+}
+      Size Variant 3: 36
+      {
+        "itemQty": "141",
+        "EAN13": "8447692183918",
+        "Material": "26206040MP00236",
+        "COLOR": "WHITE",
+        "Phase_IN": "05.26",
+        "MangoColorCode": "01",
+        "MangoSizeCode": "36",
+        "MangoSAPSizeCode": "36",
+        "SizeName": "36",
+        "SizeNameES": "36",
+        "SizeNameFR": "36",
+        "SizeNameDE": "36",
+        "SizeNameIT": "40",
+        "SizeNameUK": "8",
+        "SizeNameUS": "4",
+        "SizeNameMX": "3",
+        "SizeNameCN": "160/64A",
+        "FillingWeight": "",
+        "stocksegment": "MA 0MNGUSA",
+        "PVP_ES": "39,99",
+        "CURRENCY_ES": "EUR",
+        "PVP_EU": "49,99",
+        "CURRENCY_EU": "EUR",
+        "PVP_IN": "5,490.00",
+        "CURRENCY_IN": "INR",
+        "GarmentMeasurements": [
+                {
+                        "Dim": "C",
+                        "Description": "Waist",
+                        "Measurement": "38"
+                },
+                {
+                        "Dim": "L19",
+                        "Description": "Side length",
+                        "Measurement": "112.9"
+                }
+        ],
+        "SizePack": {
+                "SizePackType": "PACK",
+                "SizePackQty": "1",
+                "TotalSizePackQty": "141",
+                "SizeBarCode": "8447692183918"
+        },
+        "SizeDescriptions": [
+                {
+                        "Id": "001",
+                        "DescriptionId": "SPAIN",
+                        "Country": "ES",
+                        "SizeDescription": "36"
+                },
+                {
+                        "Id": "002",
+                        "DescriptionId": "GERMANY",
+                        "Country": "GE",
+                        "SizeDescription": "36"
+                },
+                {
+                        "Id": "003",
+                        "DescriptionId": "ITALIA",
+                        "Country": "IT",
+                        "SizeDescription": "40"
+                },
+                {
+                        "Id": "004",
+                        "DescriptionId": "UK",
+                        "Country": "GB",
+                        "SizeDescription": "8"
+                },
+                {
+                        "Id": "005",
+                        "DescriptionId": "FR",
+                        "Country": "FR",
+                        "SizeDescription": "36"
+                },
+                {
+                        "Id": "006",
+                        "DescriptionId": "USA",
+                        "Country": "US",
+                        "SizeDescription": "4"
+                },
+                {
+                        "Id": "007",
+                        "DescriptionId": "MEX",
+                        "Country": "MX",
+                        "SizeDescription": "3"
+                },
+                {
+                        "Id": "008",
+                        "DescriptionId": "CN",
+                        "Country": "CN",
+                        "SizeDescription": "160/64A"
+                },
+                {
+                        "Id": "009",
+                        "DescriptionId": "KR",
+                        "Country": "KR",
+                        "SizeDescription": "26"
+                },
+                {
+                        "Id": "900",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "901",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "910",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                }
+        ]
+}
+      Size Variant 4: 38
+      {
+        "itemQty": "124",
+        "EAN13": "8447692183925",
+        "Material": "26206040MP00238",
+        "COLOR": "WHITE",
+        "Phase_IN": "05.26",
+        "MangoColorCode": "01",
+        "MangoSizeCode": "38",
+        "MangoSAPSizeCode": "38",
+        "SizeName": "38",
+        "SizeNameES": "38",
+        "SizeNameFR": "38",
+        "SizeNameDE": "38",
+        "SizeNameIT": "42",
+        "SizeNameUK": "10",
+        "SizeNameUS": "6",
+        "SizeNameMX": "5",
+        "SizeNameCN": "165/68A",
+        "FillingWeight": "",
+        "stocksegment": "MA 0MNGUSA",
+        "PVP_ES": "39,99",
+        "CURRENCY_ES": "EUR",
+        "PVP_EU": "49,99",
+        "CURRENCY_EU": "EUR",
+        "PVP_IN": "5,490.00",
+        "CURRENCY_IN": "INR",
+        "GarmentMeasurements": [
+                {
+                        "Dim": "C",
+                        "Description": "Waist",
+                        "Measurement": "40"
+                },
+                {
+                        "Dim": "L19",
+                        "Description": "Side length",
+                        "Measurement": "113.5"
+                }
+        ],
+        "SizePack": {
+                "SizePackType": "PACK",
+                "SizePackQty": "1",
+                "TotalSizePackQty": "124",
+                "SizeBarCode": "8447692183925"
+        },
+        "SizeDescriptions": [
+                {
+                        "Id": "001",
+                        "DescriptionId": "SPAIN",
+                        "Country": "ES",
+                        "SizeDescription": "38"
+                },
+                {
+                        "Id": "002",
+                        "DescriptionId": "GERMANY",
+                        "Country": "GE",
+                        "SizeDescription": "38"
+                },
+                {
+                        "Id": "003",
+                        "DescriptionId": "ITALIA",
+                        "Country": "IT",
+                        "SizeDescription": "42"
+                },
+                {
+                        "Id": "004",
+                        "DescriptionId": "UK",
+                        "Country": "GB",
+                        "SizeDescription": "10"
+                },
+                {
+                        "Id": "005",
+                        "DescriptionId": "FR",
+                        "Country": "FR",
+                        "SizeDescription": "38"
+                },
+                {
+                        "Id": "006",
+                        "DescriptionId": "USA",
+                        "Country": "US",
+                        "SizeDescription": "6"
+                },
+                {
+                        "Id": "007",
+                        "DescriptionId": "MEX",
+                        "Country": "MX",
+                        "SizeDescription": "5"
+                },
+                {
+                        "Id": "008",
+                        "DescriptionId": "CN",
+                        "Country": "CN",
+                        "SizeDescription": "165/68A"
+                },
+                {
+                        "Id": "009",
+                        "DescriptionId": "KR",
+                        "Country": "KR",
+                        "SizeDescription": "28"
+                },
+                {
+                        "Id": "900",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "901",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "910",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                }
+        ]
+}
+      Size Variant 5: 40
+      {
+        "itemQty": "75",
+        "EAN13": "8447692183932",
+        "Material": "26206040MP00240",
+        "COLOR": "WHITE",
+        "Phase_IN": "05.26",
+        "MangoColorCode": "01",
+        "MangoSizeCode": "40",
+        "MangoSAPSizeCode": "40",
+        "SizeName": "40",
+        "SizeNameES": "40",
+        "SizeNameFR": "40",
+        "SizeNameDE": "40",
+        "SizeNameIT": "44",
+        "SizeNameUK": "12",
+        "SizeNameUS": "8",
+        "SizeNameMX": "7",
+        "SizeNameCN": "170/72A",
+        "FillingWeight": "",
+        "stocksegment": "MA 0MNGUSA",
+        "PVP_ES": "39,99",
+        "CURRENCY_ES": "EUR",
+        "PVP_EU": "49,99",
+        "CURRENCY_EU": "EUR",
+        "PVP_IN": "5,490.00",
+        "CURRENCY_IN": "INR",
+        "GarmentMeasurements": [
+                {
+                        "Dim": "C",
+                        "Description": "Waist",
+                        "Measurement": "42"
+                },
+                {
+                        "Dim": "L19",
+                        "Description": "Side length",
+                        "Measurement": "114.1"
+                }
+        ],
+        "SizePack": {
+                "SizePackType": "PACK",
+                "SizePackQty": "1",
+                "TotalSizePackQty": "75",
+                "SizeBarCode": "8447692183932"
+        },
+        "SizeDescriptions": [
+                {
+                        "Id": "001",
+                        "DescriptionId": "SPAIN",
+                        "Country": "ES",
+                        "SizeDescription": "40"
+                },
+                {
+                        "Id": "002",
+                        "DescriptionId": "GERMANY",
+                        "Country": "GE",
+                        "SizeDescription": "40"
+                },
+                {
+                        "Id": "003",
+                        "DescriptionId": "ITALIA",
+                        "Country": "IT",
+                        "SizeDescription": "44"
+                },
+                {
+                        "Id": "004",
+                        "DescriptionId": "UK",
+                        "Country": "GB",
+                        "SizeDescription": "12"
+                },
+                {
+                        "Id": "005",
+                        "DescriptionId": "FR",
+                        "Country": "FR",
+                        "SizeDescription": "40"
+                },
+                {
+                        "Id": "006",
+                        "DescriptionId": "USA",
+                        "Country": "US",
+                        "SizeDescription": "8"
+                },
+                {
+                        "Id": "007",
+                        "DescriptionId": "MEX",
+                        "Country": "MX",
+                        "SizeDescription": "7"
+                },
+                {
+                        "Id": "008",
+                        "DescriptionId": "CN",
+                        "Country": "CN",
+                        "SizeDescription": "170/72A"
+                },
+                {
+                        "Id": "009",
+                        "DescriptionId": "KR",
+                        "Country": "KR",
+                        "SizeDescription": "30"
+                },
+                {
+                        "Id": "900",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "901",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "910",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                }
+        ]
+}
+      Size Variant 6: 42
+      {
+        "itemQty": "42",
+        "EAN13": "8447692183949",
+        "Material": "26206040MP00242",
+        "COLOR": "WHITE",
+        "Phase_IN": "05.26",
+        "MangoColorCode": "01",
+        "MangoSizeCode": "42",
+        "MangoSAPSizeCode": "42",
+        "SizeName": "42",
+        "SizeNameES": "42",
+        "SizeNameFR": "42",
+        "SizeNameDE": "42",
+        "SizeNameIT": "46",
+        "SizeNameUK": "14",
+        "SizeNameUS": "10",
+        "SizeNameMX": "9",
+        "SizeNameCN": "170/74A",
+        "FillingWeight": "",
+        "stocksegment": "MA 0MNGUSA",
+        "PVP_ES": "39,99",
+        "CURRENCY_ES": "EUR",
+        "PVP_EU": "49,99",
+        "CURRENCY_EU": "EUR",
+        "PVP_IN": "5,490.00",
+        "CURRENCY_IN": "INR",
+        "GarmentMeasurements": [
+                {
+                        "Dim": "C",
+                        "Description": "Waist",
+                        "Measurement": "44"
+                },
+                {
+                        "Dim": "L19",
+                        "Description": "Side length",
+                        "Measurement": "114.7"
+                }
+        ],
+        "SizePack": {
+                "SizePackType": "PACK",
+                "SizePackQty": "1",
+                "TotalSizePackQty": "42",
+                "SizeBarCode": "8447692183949"
+        },
+        "SizeDescriptions": [
+                {
+                        "Id": "001",
+                        "DescriptionId": "SPAIN",
+                        "Country": "ES",
+                        "SizeDescription": "42"
+                },
+                {
+                        "Id": "002",
+                        "DescriptionId": "GERMANY",
+                        "Country": "GE",
+                        "SizeDescription": "42"
+                },
+                {
+                        "Id": "003",
+                        "DescriptionId": "ITALIA",
+                        "Country": "IT",
+                        "SizeDescription": "46"
+                },
+                {
+                        "Id": "004",
+                        "DescriptionId": "UK",
+                        "Country": "GB",
+                        "SizeDescription": "14"
+                },
+                {
+                        "Id": "005",
+                        "DescriptionId": "FR",
+                        "Country": "FR",
+                        "SizeDescription": "42"
+                },
+                {
+                        "Id": "006",
+                        "DescriptionId": "USA",
+                        "Country": "US",
+                        "SizeDescription": "10"
+                },
+                {
+                        "Id": "007",
+                        "DescriptionId": "MEX",
+                        "Country": "MX",
+                        "SizeDescription": "9"
+                },
+                {
+                        "Id": "008",
+                        "DescriptionId": "CN",
+                        "Country": "CN",
+                        "SizeDescription": "170/74A"
+                },
+                {
+                        "Id": "009",
+                        "DescriptionId": "KR",
+                        "Country": "KR",
+                        "SizeDescription": "32"
+                },
+                {
+                        "Id": "900",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "901",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                },
+                {
+                        "Id": "910",
+                        "DescriptionId": "",
+                        "Country": "",
+                        "SizeDescription": ""
+                }
+        ]
+}
+
+  [D] PRICE DATA (3 markets):
+      Market 1:
+      {
+        "PVP_ES": "39,99",
+        "Currency": "EUR",
+        "Measures": [
+                {
+                        "Measure": "",
+                        "PVP": "0,00",
+                        "Currency": ""
+                }
+        ]
+}
+      Market 2:
+      {
+        "PVP_EU": "49,99",
+        "Currency": "EUR",
+        "Measures": [
+                {
+                        "Measure": "",
+                        "PVP": "",
+                        "Currency": ""
+                }
+        ]
+}
+      Market 3:
+      {
+        "PVP_IN": "5.490,00",
+        "Currency": "INR",
+        "Measures": [
+                {
+                        "Measure": "",
+                        "PVP": "",
+                        "Currency": ""
+                }
+        ]
+}
+
+  [E] ORIGIN/DESTINATION DATA:
+      Origin: {
+        "countryorigin": "Morocco",
+        "Code_Country": "MA"
+}
+      Destination: {
+        "dc": "LLIÇÀ",
+        "dc_address": "Polígono Industrial Can Moncau 6 Parcelas B1 y B208186 Lliçá d’Amunt ES",
+        "de_code": "D001"
+}
+
+========================================================================================================================
+
+
