@@ -1,0 +1,22 @@
+# Temporary files
+.tmp/
+*.pyc
+__pycache__/
+
+# Large JSON files (can be added individually if needed)
+*.json
+
+# Environment files
+.env
+credentials.json
+token.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
