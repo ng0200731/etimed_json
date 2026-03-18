@@ -432,7 +432,7 @@ def generate_comprehensive_html(json_file, output_file):
                             JSON data (LabelID='{label_id}', Vendor={vendor}, Variable={variable}) → PDF: {pdf_file}
                         </div>
                         <div class="pdf-preview">
-                            <img src="{image_file}" alt="{pdf_file} preview">
+                            <img src="{image_file}" alt="{pdf_file} preview" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23f5f5f5%22 stroke=%22%23000%22 stroke-width=%222%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2216%22%3E{pdf_file}%3C/text%3E%3C/svg%3E';">
                             <div class="pdf-preview-caption">Preview of {pdf_file}</div>
                         </div>
                     </div>
@@ -699,10 +699,13 @@ def generate_comprehensive_html(json_file, output_file):
 """
 
     file_num = 1
+    used_files = []
+
     for label in label_data:
         label_id = label.get('LabelID', 'UNKNOWN')
         pdf_file = pdf_mappings.get(label_id, f'{label_id}-*.pdf')
         purpose = purposes.get(label_id, 'Unknown')
+        used_files.append(pdf_file)
         html += f"""
                     <tr>
                         <td>{file_num}</td>
@@ -714,27 +717,125 @@ def generate_comprehensive_html(json_file, output_file):
         file_num += 1
 
     # Add rule-based PDFs
-    html += f"""
+    rule_based_pdfs = [
+        ('CODE 15.pdf', 'Product Code', 'TRANSLATIONS&RULES.xlsx'),
+        ('triman 1.pdf', 'Recycling Symbol', 'TRANSLATIONS&RULES.xlsx'),
+        ('EAC.pdf', 'EAC Symbol', 'TRANSLATIONS&RULES.xlsx')
+    ]
+
+    for pdf_file, category, source in rule_based_pdfs:
+        used_files.append(pdf_file)
+        html += f"""
                     <tr>
                         <td>{file_num}</td>
-                        <td><strong>CODE 15.pdf</strong></td>
-                        <td>Product Code</td>
-                        <td>TRANSLATIONS&RULES.xlsx</td>
+                        <td><strong>{pdf_file}</strong></td>
+                        <td>{category}</td>
+                        <td>{source}</td>
                     </tr>
-                    <tr>
-                        <td>{file_num + 1}</td>
-                        <td><strong>triman 1.pdf</strong></td>
-                        <td>Recycling Symbol</td>
-                        <td>TRANSLATIONS&RULES.xlsx</td>
-                    </tr>
-                    <tr>
-                        <td>{file_num + 2}</td>
-                        <td><strong>EAC.pdf</strong></td>
-                        <td>EAC Symbol</td>
-                        <td>TRANSLATIONS&RULES.xlsx</td>
-                    </tr>
+"""
+        file_num += 1
+
+    html += """
                 </tbody>
             </table>
+        </div>
+
+        <div class="rules-section" style="background: #fffacd;">
+            <div class="rules-title">AVAILABLE PDFs NOT SELECTED FOR THIS PRODUCT</div>
+            <div style="font-size: 13px; margin-bottom: 15px; color: #666666;">
+                These PDF files are available in the test folder but were not selected for this specific product based on JSON data values and TRANSLATIONS&RULES.xlsx logic:
+            </div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>PDF File</th>
+                        <th>Category/Pool</th>
+                        <th>Why Not Selected</th>
+                    </tr>
+                </thead>
+                <tbody>
+"""
+
+    # Define all available PDFs in test folder
+    not_selected_pdfs = {
+        'CODE 1.pdf': ('Product Code Pool', 'Different Line/Packaging combination'),
+        'CODE 2.pdf': ('Product Code Pool', 'Different Line/Packaging combination'),
+        'CODE 3.pdf': ('Product Code Pool', 'Different Line/Packaging combination'),
+        'CODE 4.pdf': ('Product Code Pool', 'Different Line/Packaging combination'),
+        'CODE 5.pdf': ('Product Code Pool', 'Different Line/Packaging combination'),
+        'CODE 6.pdf': ('Product Code Pool', 'Different Line/Packaging combination'),
+        'CODE 7.pdf': ('Product Code Pool', 'Different Line/Packaging combination'),
+        'CODE 8.pdf': ('Product Code Pool', 'Different Line/Packaging combination'),
+        'CODE 10.pdf': ('Product Code Pool', 'Different Line/Packaging combination'),
+        'CODE 14.pdf': ('Product Code Pool', 'Different Line/Packaging combination'),
+        'CODE 16.pdf': ('Product Code Pool', 'Different Line/Packaging combination'),
+        'triman 2.pdf': ('Triman Recycling Pool', 'Different product type'),
+        'triman 3.pdf': ('Triman Recycling Pool', 'Different product type')
+    }
+
+    never_used_pdfs = {
+        'ÉLÉMENTS.pdf': ('Additional Elements', 'Not part of any selection pool')
+    }
+
+    unused_num = 1
+    for pdf_file, (category, reason) in not_selected_pdfs.items():
+        if pdf_file not in used_files:
+            html += f"""
+                    <tr>
+                        <td>{unused_num}</td>
+                        <td>{pdf_file}</td>
+                        <td>{category}</td>
+                        <td style="color: #666666; font-size: 12px;">{reason}</td>
+                    </tr>
+"""
+            unused_num += 1
+
+    html += """
+                </tbody>
+            </table>
+            <div style="margin-top: 15px; padding: 10px; background: #ffffff; border-left: 4px solid #d4a017;">
+                <strong>Total PDFs in selection pools:</strong> """ + str(len(not_selected_pdfs)) + """<br>
+                <strong>Not selected for this product:</strong> """ + str(len(not_selected_pdfs)) + """
+            </div>
+        </div>
+
+        <div class="rules-section" style="background: #fff0f0;">
+            <div class="rules-title">PDFs NEVER USED (Not in Any Selection Pool)</div>
+            <div style="font-size: 13px; margin-bottom: 15px; color: #666666;">
+                These PDF files exist in the test folder but are not part of any selection logic or rules:
+            </div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>PDF File</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+"""
+
+    never_num = 1
+    for pdf_file, (category, reason) in never_used_pdfs.items():
+        html += f"""
+                    <tr>
+                        <td>{never_num}</td>
+                        <td><strong>{pdf_file}</strong></td>
+                        <td>{category}</td>
+                        <td style="color: #8b0000; font-size: 12px;">{reason}</td>
+                    </tr>
+"""
+        never_num += 1
+
+    html += """
+                </tbody>
+            </table>
+            <div style="margin-top: 15px; padding: 10px; background: #ffffff; border-left: 4px solid #8b0000;">
+                <strong>Total never used:</strong> """ + str(len(never_used_pdfs)) + """<br>
+                <em style="font-size: 12px; color: #666666;">These files are not referenced in JSON LabelData or TRANSLATIONS&RULES.xlsx</em>
+            </div>
         </div>
     </div>
 </body>
@@ -746,7 +847,9 @@ def generate_comprehensive_html(json_file, output_file):
         f.write(html)
 
     print(f"HTML report generated: {output_file}")
-    print(f"Total PDF files used: {file_num + 2}")
+    print(f"Total PDF files used: {len(used_files)}")
+    print(f"Total PDF files not selected: {len(not_selected_pdfs)}")
+    print(f"Total PDF files never used: {len(never_used_pdfs)}")
 
 
 if __name__ == "__main__":
